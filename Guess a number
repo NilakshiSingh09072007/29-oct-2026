@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+    int secret=25;
+    int guess;
+    int attempts=0;
+    printf("Guess the number\n");
+    scanf("%d",&guess);
+    while(guess!=secret)
+    {
+        if(guess>secret)
+        {
+            printf("Too high try again");
+        }
+        else
+        {
+            printf("Too low try again");
+        }
+        printf("Guess the number");
+        scanf("%d",&guess);
+        attempts++;
+    }
+    attempts++;
+    printf("Congratulations you guess the correct number");
+    printf("Total attempts=%d",attempts);
+    return 0;
+}
+
+
